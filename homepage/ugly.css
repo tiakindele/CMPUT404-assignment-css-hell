@@ -1,0 +1,239 @@
+:root {
+    --bg: #c1d131;
+    --header-bg: #1e384d;
+    --nav-bg: #10283a;
+    --text-color: #4d4385;
+    --text-color-light: #dad8d8;
+    --header-text-color:white;
+    --link-color: #639A67;
+    --link-hover: #205D67;
+    --select-color: rgba(124, 150, 199, 0.363);
+    --shape-color: #10283a;
+    --shape-color-light: #b9c9c7;
+}
+h1 {
+    padding-bottom: 15px;
+    text-align: left;
+    font-size: 30px;
+    padding-top: 70px; 
+    margin-top: -50px;
+}
+p {
+    color: var(--text-color);
+    font-family: cursive;
+    text-align: justify;
+}
+H1,H2,H3,H4,H5,H6 { 
+    color: var(--text-color);
+    text-align: center;
+    font-family: cursive;
+}
+ul {
+    font-family: cursive;
+}
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-hover);
+}
+img {
+    width: 200px;
+    height: 150px;
+    /* border: 10px solid var(--border-color); */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* -------------------body------------------- */
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    overflow-x: hidden;
+    font-size: 18px !important;
+    background-color: var(--bg) !important;
+}
+hr.pages { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+/* -------------------Header CSS------------------- */
+.top-image
+{
+    height: 25vh;
+    background-image: url("img/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+.top-image h1
+{
+    text-align: center;
+    color: var(--text-color-light);
+    font-size: 60px;
+    font-family: cursive;
+}
+/* -------------------Nav Bar------------------- */
+.nav-bar
+{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+.navbar
+{
+    background-color: var(--nav-bg);
+}
+.navbar-brand
+{
+    margin-left: 0%;
+    color: var(--header-text-color);
+    padding-right: 7%;
+}
+.nav-bar .fa-bars
+{
+    font-size: 35px;
+    color: var(--header-text-color);
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+.navbar-nav
+{
+    float: left;
+    text-align: left;
+}
+.nav-link
+{
+    color: var(--header-text-color) !important;
+    font-family: cursive;
+}
+.sidebar {
+    height: 60vh;
+    margin-top: 22%;
+    margin: 10%;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    overflow-x: hidden;
+    padding: 15px 0 5px 12px;
+    word-wrap: normal;
+}
+.sidebar p, .sidebar h4{
+    color: black;
+    margin-right: 20px;
+    font-family: cursive;
+}
+/* -------------------About------------------- */
+.about
+{
+    padding-top: 15px;
+    min-height: auto;
+}
+.col-md-3 .profile-img
+{
+    max-width: 1000px;
+    border: 2px solid var(--shape-color);
+}
+.about .col-md-6
+{
+    padding-bottom: 10px;
+}
+.br
+{
+    line-height: 50%;
+}
+/* -------------------Experience------------------- */
+.experience
+{
+    padding-top: 15px;
+    min-height: auto;
+}
+.title{
+    color: var(--text-color-light);
+}
+.experience .link
+{
+    color: var(--link-color);
+}
+.experience .link:hover
+{
+    color: var(--link-hover);
+}
+.col-md-3 .profile-img
+{
+    max-width: 1000px;
+    border: 2px solid var(--shape-color);
+}
+/* -------------------Services------------------- */
+.skills
+{
+    padding-top: 15px;
+    padding-bottom: 75px;
+    min-height: auto;
+    color: var(--text-color);
+}
+.skills .link
+{
+    color: var(--link-color);
+}
+.skills .link:hover
+{
+    color: var(--link-hover);
+}
+.col-md-3 .profile-img
+{
+    max-width: 1000px;
+    border: 2px solid var(--shape-color);
+}
+#skills.container .row h6
+{
+    /* text-align: center; */
+    margin: 1%;
+    padding-bottom: 1%;
+    font-size: 18px;
+}
+#skills.container .col-sm-3,
+#skills.container .col-sm-4
+{
+    margin: 10px;
+    background-color: var(--shape-color);
+    height: auto;
+    width: 10px;
+    padding: 15px 0 5px 12px;
+    white-space: nowrap;
+}
+#skills.container #col1.col-sm-3,
+#skills.container #col3.col-sm-3
+{
+    background-color: var(--shape-color);
+    color: var(--text-color-light);
+    font-family: cursive;
+}
+#skills.container #col2.col-sm-4
+{
+    background-color: var(--shape-color-light);
+    color: var(--text-color);
+    font-family: cursive;
+}
+/* -------------------Footer------------------- */
+.footer
+{
+    background-color: var(--nav-bg);
+    height: 60px;
+    padding: 10px;
+    width: 100%;
+}
+.footer .footer-p
+{
+    color: var(--header-text-color);
+    text-align: center;
+}
